@@ -71,3 +71,17 @@ class test5{
 }  
 
 ------------------------ Welcome (assigned) ------------------------------------------------------------
+
+
+public class Main {
+  public static void main(String[] args) {
+    String name = "Jhoshua";
+    int myNum;
+    myNum = 18;
+    String address = "Terry Hills Subd. Bulua, CDO.";
+    System.out.println("Hello, my name is " + name + "." + " I am " + myNum + "years old. Currently Living in " + address);
+    
+  }
+}
+
+----------------------- Old Project --------------------------------------------------------------------------------------------
