@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String []args) {
+
+     System.out.println("1. Addition 2. Subtraction 3. Multiplication 4. Division ");
+     Scanner choice = new Scanner(System.in);
+     System.out.println("Please choose an option: ");
+     int choices = choice.nextInt();
+
+        switch(choices){
+
+            case 1:
+                 Scanner n1 = new Scanner(System.in);       
+                 System.out.println("Please input your first number: ");
+                 int num1 = n1.nextInt();
+
+                 Scanner n2 = new Scanner(System.in);       
+                 System.out.println("Please input your second number: ");
+                 int num2 = n2.nextInt();
+
+                 int add = num1 + num2;
+
+                 System.out.print(num1 + " + " + num2 + " is.. " + add);
+                 break;
+
+            case 2:
+                 Scanner nn1 = new Scanner(System.in);       
+                 System.out.println("Please input your first number: ");
+                 int numn1 = nn1.nextInt();
+
+                 Scanner nn2 = new Scanner(System.in);       
+                 System.out.println("Please input your second number: ");
+                 int numn2 = nn2.nextInt();
+
+                 int Sub = numn1 - numn2;
+
+                 System.out.print(numn1 + " - " + numn2 + " is.. " + Sub);
+                 break;
+
+             case 3:
+                 Scanner nnn1 = new Scanner(System.in);       
+                 System.out.println("Please input your first number: ");
+                 int numnn1 = nnn1.nextInt();
+
+                 Scanner nnn2 = new Scanner(System.in);       
+                 System.out.println("Please input your second number: ");
+                 int numnn2 = nnn2.nextInt();
+
+                 int multi = numnn1 * numnn2;
+
+                 System.out.print(numnn1 + " x " + numnn2 + " is.. " + multi);
+                 break;
+
+
+            case 4:
+                 Scanner nnnn1 = new Scanner(System.in);       
+                 System.out.println("Please choose an option: ");
+                 int numnnnn1 = nnnn1.nextInt();
+
+                 Scanner nnnnn2 = new Scanner(System.in);       
+                 System.out.println("Please choose an option: ");
+                 int numnnnn2 = nnnnn2.nextInt();
+
+                 int Div = numnnnn1 - numnnnn2;
+
+                 System.out.print(numnnnn1 + " ÷  " + numnnnn2 + " is.. " + Div);
+                 break;
+
+                 
+
+
+        }   
+
+    }
+}
+
+
+------------------------------- JAVA SWITCH CASE  ----------------------------------------------------------------------------|
