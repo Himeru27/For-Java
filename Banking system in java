@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class GameMenu {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int choice;
+        float balance = 0;
+
+        do {
+            System.out.println("---Gcash---");
+            System.out.println("1. Deposit");
+            System.out.println("2. Check Balance");
+            System.out.println("3. Exit");
+            System.out.print("Please enter your choice: ");
+            choice = input.nextInt();
+
+            switch (choice) {
+                case 1:
+                    
+                    Scanner depo = new Scanner(System.in);
+                    System.out.println("Please enter the amount you want to deposit: ");
+                    float deposit = depo.nextInt();
+
+                    balance += deposit; 
+                    System.out.println("Cash has been successfully deposited..");
+                    System.out.println("Your current balance is.. "+ balance);
+                    break;
+                case 2:
+                    System.out.println("Your current balance is.. " + balance);
+                    break;
+                case 3:
+                    System.out.println("Exiting Gcash...");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        } while (choice != 3); 
+
+        input.close();
+    }
+}
+
+--------------------------------- do while, increment, and switch case with scanner --------------------------------------------------------
